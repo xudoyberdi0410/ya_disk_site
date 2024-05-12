@@ -5,7 +5,7 @@ let btn = document.getElementById("upload_button")
 let formData = new FormData()
 
 let basic_url = "https://cloud-api.yandex.net/v1/disk"
-const token = ${{ secrets.YA_TOKEN }}
+const token = "y0_AgAAAABB9ET6AAvCUwAAAAEEa64SAAArZxMIpO5DsrqQl5veh5bTIg9Vkg"
 let headers = {
     "Authorization": `OAuth ${token}`,
 }   
