@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222831;
+    color: #EEEEEE;
+}
+.container{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+button{
+    color: #EEEEEE;
+}
