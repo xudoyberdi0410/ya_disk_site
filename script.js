@@ -4,11 +4,11 @@ let input = document.getElementById("dropzone-file")
 let btn = document.getElementById("upload_button")
 let formData = new FormData()
 
-const folder_path = "/test"
+const folder_path = "/c x c unity"
 let file_name = ""
 
 let basic_url = "https://cloud-api.yandex.net/v1/disk"
-const token = "y0_AgAAAABB9ET6AAvCUwAAAAEEa64SAAArZxMIpO5DsrqQl5veh5bTIg9Vkg"
+const token = "y0_AgAAAABnvA_mAAvCUwAAAAEEr0WNAABqR-ey2U1DMbKsXVuKHZaYQj0eiw"
 let headers = {
     "Authorization": `OAuth ${token}`,
 }   
@@ -29,6 +29,9 @@ async function get_info(path){
     return resp
 
 }
+get_info('/').then((data)=>{
+    console.log(data)
+})
 
 async function do_publish(path) {
     params['path'] = path
@@ -42,7 +45,8 @@ async function do_publish(path) {
 input.addEventListener("change", () => {
     document.getElementById("filename").innerHTML = input.files[0].name
     document.getElementById("file_types").style = "display: none"
-    file_name = input.files[0].name
+    let time = new Date()
+    file_name = time.getTime() + input.files[0].name
 })
 btn.addEventListener("click", () => {
     btn.setAttribute("disabled", "disabled")
