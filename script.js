@@ -29,10 +29,6 @@ async function get_info(path){
     return resp
 
 }
-get_info('/').then((data)=>{
-    console.log(data)
-})
-
 async function do_publish(path) {
     params['path'] = path
     await axios({
