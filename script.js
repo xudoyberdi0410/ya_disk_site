@@ -9,7 +9,7 @@ class YaDisk{
         this.headers = {
             "Authorization": `Basic ${this.username}:${this.password}`,
         }
-        this.basic_url = "http://89.111.173.45/"
+        this.basic_url = "http://89.111.173.45"
     }
     
     async get_file_info(file_name){
